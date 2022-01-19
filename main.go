@@ -30,7 +30,7 @@ func main(){
 		os.Exit(0)
 	}()
 	for {
-		cmd := exec.Command("/home/saffron/go/bin/twty")
+		cmd := exec.Command("twty")
 		out ,err := cmd.Output()
 
 		if err!=nil{time.Sleep(time.Second * 20);continue}
